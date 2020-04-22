@@ -1,0 +1,90 @@
+*, *::before, *::after
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 62.5%
+
+body
+    font-family: 'Poppins', sans-serif
+    font-size: 1.5rem
+    // height: 100vh
+    background-color: hsl(0, 0%, 98%)
+
+a 
+    text-decoration: none
+
+.move
+    transform: translateY(50%)
+
+.container
+    max-width: 1440px
+    margin: 0 auto
+    padding: 5rem 0
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    header
+        text-align: center
+        max-width: 500px
+        h1
+            margin-bottom: 1.9rem
+            color: hsl(234, 12%, 34%)
+        span
+            font-weight: 200
+        p
+            color: hsl(229, 6%, 66%)
+        
+
+    .section-boxes
+        max-width: 1440px
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        margin: 3.5rem 0
+        align-content: center
+        .box
+            padding: 30px
+            background-color: red
+            margin: 15px
+            max-width: 350px
+            border-radius: 5px
+            background-color: #fff
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 6px 6px rgba(0,0,0,0.05)
+            overflow: hidden
+            position: relative
+            .title
+                color: hsl(234, 12%, 34%)
+            .desc
+                color: hsl(229, 6%, 66%)
+            img
+                margin-top: 7rem
+                display: block
+                margin-left: auto
+        
+        .box::before
+            content: ''
+            position: absolute
+            background-color: red
+            height: 5px
+            width: 100%
+            left: 0
+            top: 0
+        .team-builder::before
+            background-color: hsl(0, 78%, 62%)
+        .supervisor::before
+            background-color: hsl(180, 62%, 55%)
+        .karma::before
+            background-color: hsl(34, 97%, 64%)
+        .calculator::before
+            background-color: hsl(212, 86%, 64%)
+            
+
+footer
+    padding: 1rem 0
+    background-color: #fff
+    text-align: center
+    font-size: 1.3rem
